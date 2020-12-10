@@ -1,0 +1,35 @@
+JSON file with PII
+only escalate if we suspect there is relation to CAI judging off context from repo
+
+
+
+# -*- coding: utf-8 -*-
+
+new_address_parser_api_minimal_data = {
+    "line_1": "REMOVED",
+    "line_2": ""
+}
+
+
+new_address_parser_api_full_data = {
+    "line_1": "REMOVED",
+    "line_2": "REMOVED"
+}
+
+
+new_address_parser_api_compose_data_test1 = {
+    "pre_street_direction": "",
+    "post_street_direction": "",
+    "occupancy_type": "",
+    "street_number": "REMOVED",
+    "mail_stop": "",
+    "street_name": "c",
+    "post_street_type": "",
+    "sub_type": "",
+    "sub_identifier": "",
+    "pre_street_type": "REMOVED",
+    "rural_box": "",
+    "po_box": "",
+    "occupancy_identifier": "REMOVED",
+    "rural_route": ""
+}
