@@ -1,0 +1,46 @@
+[alias]
+	st = status
+	br = branch
+	ci = commit
+	co = checkout
+	rs = remote show
+	rv = remote -v
+	diffc = diff --cached --color
+    diffh = diff .
+	rmc = rm --cache
+	fp = fetch --prune
+	fpt = fetch --prune --tags
+	ftp = fetch --prune --tags
+	mff = merge --ff-only
+	pff = pull --ff-only
+	amend = commit --amend --no-edit
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	ignored = ls-files --others -i --exclude-standard
+	smu = submodule update --init
+	dt = difftool --dir-diff --no-symlinks
+	tv = show-ref --tags
+	tc = tag --contains
+	lsig = log --show-signature
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lsf = ls-files
+	sth = status .
+	rbc = rebase --continue
+	rba = rebase --abort
+	poh = push origin HEAD
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = /root/.gitignore
+[user]
+	email = Johnny.Cage@coxautoinc.com
+	name = Johnny Cage
+	signingkey = 12C3AFA9C8P8061F
+[commit]
+	gpgsign = true
+[hub]
+	host = ghe.coxautoinc.com
